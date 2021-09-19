@@ -1,0 +1,15 @@
+C:\Users\kassi\source\repos\teste\teste\bin\Debug\net5.0\teste.exe
+C:\Users\kassi\source\repos\teste\teste\bin\Debug\net5.0\teste.deps.json
+C:\Users\kassi\source\repos\teste\teste\bin\Debug\net5.0\teste.runtimeconfig.json
+C:\Users\kassi\source\repos\teste\teste\bin\Debug\net5.0\teste.runtimeconfig.dev.json
+C:\Users\kassi\source\repos\teste\teste\bin\Debug\net5.0\teste.dll
+C:\Users\kassi\source\repos\teste\teste\bin\Debug\net5.0\ref\teste.dll
+C:\Users\kassi\source\repos\teste\teste\bin\Debug\net5.0\teste.pdb
+C:\Users\kassi\source\repos\teste\teste\obj\Debug\net5.0\teste.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kassi\source\repos\teste\teste\obj\Debug\net5.0\teste.AssemblyInfoInputs.cache
+C:\Users\kassi\source\repos\teste\teste\obj\Debug\net5.0\teste.AssemblyInfo.cs
+C:\Users\kassi\source\repos\teste\teste\obj\Debug\net5.0\teste.csproj.CoreCompileInputs.cache
+C:\Users\kassi\source\repos\teste\teste\obj\Debug\net5.0\teste.dll
+C:\Users\kassi\source\repos\teste\teste\obj\Debug\net5.0\ref\teste.dll
+C:\Users\kassi\source\repos\teste\teste\obj\Debug\net5.0\teste.pdb
+C:\Users\kassi\source\repos\teste\teste\obj\Debug\net5.0\teste.genruntimeconfig.cache
