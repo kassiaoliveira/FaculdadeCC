@@ -15,6 +15,23 @@ namespace atividadeCsharp
                 {
 
                     case 1:
+                        
+                        Pessoa pessoaUm = new Pessoa();
+                        Pessoa pessoaDois = new Pessoa();
+
+                        Console.WriteLine("Informe o nome da primeira pessoa: ");
+                        pessoaUm.SetNome(Console.ReadLine());
+                        Console.WriteLine("Informe a idade da primeira pessoa: ");
+                        pessoaUm.SetIdade(Convert.ToInt32(Console.ReadLine()));
+
+                        Console.WriteLine("Informe o nome da segunda pessoa: ");
+                        pessoaDois.SetNome(Console.ReadLine());
+                        Console.WriteLine("Informe a idade da segunda pessoa: ");
+                        pessoaDois.SetIdade(Convert.ToInt32(Console.ReadLine()));
+
+                        Pessoa.pessoaMaisVelha(pessoaUm,
+                                               pessoaDois);
+
                         questao = MostrarMenu();
                         break;
                     case 2:
