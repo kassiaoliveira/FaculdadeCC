@@ -1,0 +1,76 @@
+body {
+  background-color: #99BFF2;
+}
+.in {
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+a:link {
+  text-decoration: none;
+}
+
+.figure{
+    padding-top: 100px;
+}
+
+.funcionario {
+  padding: 0 10px;
+}
+
+.c-home {
+  margin: 0 10px;
+  text-align: center;
+  width: 14rem;
+  text-decoration: none;
+}
+
+.card-title {
+  padding-top: 16px;
+}
+
+.c-home:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #fff;
+  background: rgb(39, 39, 172);
+}
+
+.navbar-nav .nav-item:hover {
+background: #2c81f8;
+}
+.nav-link:hover {
+  color: #2c81f8;
+}
+
+.bg-blue {
+  background-color: #99BFF2;
+}
+
+.fa-trash {
+  color: red;
+}
+.fa-edit {
+  color: #2c81f8;
+}
+
+.header-content {
+  justify-content: space-between; 
+  padding: 0px 40px 60px 30px;
+}
+
+.add-edit-title {
+  margin: 50px 0px;
+}
+
+.btn-primary {
+  width: 150px;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  margin-top: 60px;
+  bottom: 0;
+}

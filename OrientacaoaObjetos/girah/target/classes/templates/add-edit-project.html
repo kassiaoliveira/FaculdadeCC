@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Adicionar Projeto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="css/Styles.css" rel="stylesheet">
+</head>
+
+<body class="in">
+<nav class="navbar navbar-expand-lg navbar-dark bg-blue">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">GIRAH</a>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item rounded">
+                    <a class="nav-link active" aria-current="page" href="/listEmployee"><i class="bi bi-house-fill me-2"></i>Funcionários</a>
+                </li>
+                <li class="nav-item rounded">
+                    <a class="nav-link active" aria-current="page" href="/listTeam"><i class="bi bi-house-fill me-2"></i>Equipe</a>
+                </li>
+                <li class="nav-item rounded">
+                    <a class="nav-link active" aria-current="page" href="/listProject"><i class="bi bi-house-fill me-2"></i>Projeto</a>
+                </li>
+                <li class="nav-item rounded">
+                    <a class="nav-link active" aria-current="page" href="/reports"><i class="bi bi-house-fill me-2"></i>Relatório</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="d-flex justify-content-center">
+    <div>
+        <h3 class="text-center add-edit-title"> Adicionar Projeto</h3>
+        <div>
+            <div class="card-body">
+                <div class="col-md-12">
+                    <form action="#" th:action="@{/createProject}" th:object="${project}" method="post">
+                        <div class="row">
+                            <div class="form-row col-md-12 justify-content-md-center">
+                                <div class="form-group col-md-5">
+                                    <label for="codProjeto" class="col-form-label">Código do Projeto</label>
+                                    <input type="number" th:field="*{codProjeto}" class="form-control"
+                                           id="codProjeto"  />
+                                </div>
+                                <div class="form-group col-md-5">
+                                    <label for="nomeProjeto" class="col-form-label">Nome do Projeto</label>
+                                    <input type="text" th:field="*{nomeProjeto}" class="form-control"
+                                           id="nomeProjeto"  />
+                                </div>
+                            </div>
+                            <div class="form-row col-md-12 justify-content-md-center">
+                                <div class="form-group col-md-3">
+                                    <label for="dataInicio" class="col-form-label">Data de Início</label>
+                                    <input type="date" th:field="*{dataInicio}" class="form-control"
+                                           id="dataInicio"  />
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="dataFim" class="col-form-label">Data de Conclusão</label>
+                                    <input type="date" th:field="*{dataFim}" class="form-control"
+                                           id="dataFim"  />
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="equipe" class="col-form-label">Código da equipe</label>
+                                    <input type="text" th:field="*{equipe}" class="form-control"
+                                           id="equipe"  />
+                                </div>
+                            </div>
+
+                            <div class="col-md-10 offset-md-1">
+                                <input type="submit" class="btn btn-primary" value="salvar">
+                            </div>
+                            <input type="hidden" id="id" th:field="*{codProjeto}">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
