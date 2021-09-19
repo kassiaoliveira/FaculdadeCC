@@ -28,3 +28,4 @@ C:\FaculdadeCC\ParadigmasdaProgramacao\atividadeCsharp\atividadeCsharp\obj\Debug
 C:\FaculdadeCC\ParadigmasdaProgramacao\atividadeCsharp\atividadeCsharp\obj\Debug\net5.0\ref\atividadeCsharp.dll
 C:\FaculdadeCC\ParadigmasdaProgramacao\atividadeCsharp\atividadeCsharp\obj\Debug\net5.0\atividadeCsharp.pdb
 C:\FaculdadeCC\ParadigmasdaProgramacao\atividadeCsharp\atividadeCsharp\obj\Debug\net5.0\atividadeCsharp.genruntimeconfig.cache
+C:\FaculdadeCC\ParadigmasdaProgramacao\atividadeCsharp\atividadeCsharp\obj\Debug\net5.0\atividadeCsharp.csproj.AssemblyReference.cache

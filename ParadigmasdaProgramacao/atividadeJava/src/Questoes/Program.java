@@ -16,13 +16,14 @@ public class Program {
                     Pessoa pessoaDois = new Pessoa();
 
                     System.out.println("Informe o nome da primeira pessoa: ");
-                    pessoaUm.setNome(scan.nextLine());
+                    pessoaUm.setNome(scan.next());
+                    scan.nextLine();
                     System.out.println("Informe a idade da primeira pessoa: ");
                     pessoaUm.setIdade(scan.nextInt());
-                    scan.nextLine();
 
                     System.out.println("Informe o nome da segunda pessoa: ");
-                    pessoaDois.setNome(scan.nextLine());
+                    pessoaDois.setNome(scan.next());
+                    scan.nextLine();
                     System.out.println("Informe a idade da segunda pessoa: ");
                     pessoaDois.setIdade(scan.nextInt());
 
@@ -37,7 +38,8 @@ public class Program {
 
                     System.out.println("Informe os dados do primeiro funcionário: ");
                     System.out.println("Nome: ");
-                    String nome = scan.next();
+                    String nome = scan.nextLine();
+                    scan.nextLine();
                     primeiroFuncionario.setNome(nome);
 
                     System.out.println("Salario: ");
@@ -46,7 +48,8 @@ public class Program {
 
                     System.out.println("Informe os dados do Segundo funcionário: ");
                     System.out.println("Nome: ");
-                    String nome2 = scan.next();
+                    String nome2 = scan.nextLine();
+                    scan.nextLine();
                     segundoFuncionario.setNome(nome2);
 
                     System.out.println("Salario: ");
@@ -77,14 +80,15 @@ public class Program {
                 case 4:
                     //Ana Beatriz Araújo de Sousa  202004354
                     Scanner sc = new Scanner(System.in);
-                    System.out.println("Digite o nome do trabalhador");
-                    nome = sc.nextLine();
-                    System.out.println("Digite o salário do trabalhador");
+                    System.out.println("Digite o nome do trabalhador: ");
+                    String nomeTrabalhador = sc.nextLine();
+                    scan.nextLine();
+                    System.out.println("Digite o salário do trabalhador: ");
                     double salario = sc.nextDouble();
                     System.out.println("Digite o imposto em cima do salário do trabalhador");
                     double imposto = sc.nextDouble();
 
-                    AumentoSalario cadastro = new AumentoSalario(nome, salario, imposto);
+                    AumentoSalario cadastro = new AumentoSalario(nomeTrabalhador, salario, imposto);
 
                     System.out.println("Dados do trabalhador: ");
                     System.out.println("Nome: " + cadastro.getNome());
@@ -105,8 +109,9 @@ public class Program {
                     Aluno aluno = new Aluno();
                     System.out.println("Digite o nome do Aluno");
                     System.out.println("Nome: ");
-                    String nomeAluno = scan.next();
+                    String nomeAluno = scan.nextLine();
                     aluno.setNomeAluno(nomeAluno);
+                    scan.nextLine();
 
                     System.out.println("Digite a Primeira nota do aluno");
                     Double primeiraNota=scan.nextDouble();

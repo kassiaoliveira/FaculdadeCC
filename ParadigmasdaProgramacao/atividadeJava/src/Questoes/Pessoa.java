@@ -2,10 +2,6 @@ package Questoes;
 
 public class Pessoa {
 
-    public Pessoa()
-    {
-    }
-
     private String nome;
     private int idade;
 
