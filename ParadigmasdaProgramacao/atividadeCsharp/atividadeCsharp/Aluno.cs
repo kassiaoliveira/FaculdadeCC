@@ -21,10 +21,19 @@ namespace atividadeCsharp
 
         private string Resultado;
 
-        public double CalcularMediaAluno(double primeiraNota, double segundaNota, double terceiraNota)
+        public void CalcularMediaAluno(double primeiraNota, double segundaNota, double terceiraNota)
         {
             notaFinal = this.primeiraNota + (this.segundaNota + this.terceiraNota);
-            return notaFinal;
+
+            if (notaFinal >= 60)
+            {
+                Console.WriteLine("Aluno Aprovado");
+            }
+            else
+            {
+                Console.WriteLine("Aluno Reprovado");
+                Console.WriteLine("Faltam: " + (60 - notaFinal));
+            }
         }
 
         public string GetNomeAluno()

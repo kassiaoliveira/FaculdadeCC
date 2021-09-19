@@ -15,7 +15,7 @@ namespace atividadeCsharp
                 {
 
                     case 1:
-                        
+                        // Moisés Torquato de Santana 202004813
                         Pessoa pessoaUm = new Pessoa();
                         Pessoa pessoaDois = new Pessoa();
 
@@ -35,7 +35,7 @@ namespace atividadeCsharp
                         questao = MostrarMenu();
                         break;
                     case 2:
-
+                        //Isabelle Conceição de Souza Lourenço 202003947
                         Funcionario primeiroFuncionario = new Funcionario();
                         Funcionario segundoFuncionario = new Funcionario();
 
@@ -62,6 +62,7 @@ namespace atividadeCsharp
                         questao = MostrarMenu();
                         break;
                     case 3:
+                        //Renan Yuri Bernardo da Silva 202004640
                         Retangulo retangulo = new Retangulo();
 
                         Console.WriteLine("Informe a largura do retángulo:  ");
@@ -74,9 +75,35 @@ namespace atividadeCsharp
                         questao = MostrarMenu();
                         break;
                     case 4:
+                        //Ana Beatriz Araújo de Sousa  202004354
+
+                        Console.WriteLine("Digite o nome do trabalhador: ");
+                        string nomeTrabalhador = Console.ReadLine();
+                        Console.WriteLine("Digite o salário do trabalhador: ");
+                        float salario = float.Parse(Console.ReadLine());
+                        Console.WriteLine("Digite o imposto sob o salário do trabalhador: ");
+                        float imposto = float.Parse(Console.ReadLine());
+
+                        AumentoSalario aumentoSalarial = new AumentoSalario();
+
+                        Console.WriteLine("Dados do trabalhador: ");
+                        aumentoSalarial.NomeTrabalhador = nomeTrabalhador;
+                        Console.WriteLine(aumentoSalarial.NomeTrabalhador);
+                        salario = aumentoSalarial.salarioLiquido(salario, imposto);
+                        Console.WriteLine("Salário líquido: ");
+                        Console.WriteLine(aumentoSalarial.Salario);
+                        Console.WriteLine("Digite o aumento salarial: ");
+                        float aumento = float.Parse(Console.ReadLine());
+                        aumentoSalarial.Aumento = aumento;
+                        salario = aumentoSalarial.novoSalario(salario, aumento);
+                        Console.WriteLine("Novo salário: ");
+                        Console.WriteLine(aumentoSalarial.Salario);
+
+                        questao = MostrarMenu();
+
                         break;
                     case 5:
-
+                        //Kassia Oliveira da Silva 202002098
                         Aluno aluno = new Aluno();
 
                         Console.WriteLine("Digite o nome do Aluno");
@@ -95,16 +122,8 @@ namespace atividadeCsharp
                         double terceiraNota = Convert.ToDouble(Console.ReadLine());
                         aluno.SetTerceiraNota(terceiraNota);
 
-                        double notaFinal = aluno.CalcularMediaAluno(primeiraNota, segundaNota, terceiraNota);
-                        if (notaFinal >= 60)
-                        {
-                            Console.WriteLine("Aluno Aprovado");
-                        }
-                        else
-                        {
-                            Console.WriteLine("Aluno Reprovado");
-                            Console.WriteLine("Faltam: " + (60 - notaFinal));
-                        }
+                        aluno.CalcularMediaAluno(primeiraNota, segundaNota, terceiraNota);
+                       
                         questao = MostrarMenu();
                         break;
                     case 0:
