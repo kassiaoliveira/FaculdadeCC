@@ -39,7 +39,6 @@ C:\Users\kassi\Projetos\FaculdadeCC\ParadigmasdaProgramacao\atividadeCsharp\ativ
 C:\Users\kassi\Projetos\FaculdadeCC\ParadigmasdaProgramacao\atividadeCsharp\atividadeCsharp\bin\Debug\net5.0\atividadeCsharp.dll
 C:\Users\kassi\Projetos\FaculdadeCC\ParadigmasdaProgramacao\atividadeCsharp\atividadeCsharp\bin\Debug\net5.0\ref\atividadeCsharp.dll
 C:\Users\kassi\Projetos\FaculdadeCC\ParadigmasdaProgramacao\atividadeCsharp\atividadeCsharp\bin\Debug\net5.0\atividadeCsharp.pdb
-C:\Users\kassi\Projetos\FaculdadeCC\ParadigmasdaProgramacao\atividadeCsharp\atividadeCsharp\obj\Debug\net5.0\atividadeCsharp.csproj.AssemblyReference.cache
 C:\Users\kassi\Projetos\FaculdadeCC\ParadigmasdaProgramacao\atividadeCsharp\atividadeCsharp\obj\Debug\net5.0\atividadeCsharp.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\kassi\Projetos\FaculdadeCC\ParadigmasdaProgramacao\atividadeCsharp\atividadeCsharp\obj\Debug\net5.0\atividadeCsharp.AssemblyInfoInputs.cache
 C:\Users\kassi\Projetos\FaculdadeCC\ParadigmasdaProgramacao\atividadeCsharp\atividadeCsharp\obj\Debug\net5.0\atividadeCsharp.AssemblyInfo.cs

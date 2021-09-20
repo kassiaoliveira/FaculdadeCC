@@ -120,7 +120,7 @@ public class Program {
                     while (aluno.getPrimeiraNota() > 30)
                     {
                         System.out.println("Nota inválida! Digite a primeira nota do aluno");
-                        primeiraNota = scan.nextDouble();
+                        aluno.setPrimeiraNota(scan.nextDouble());
                     }
 
                     System.out.println("Digite a Segunda nota do aluno");
@@ -128,7 +128,7 @@ public class Program {
                     aluno.setSegundaNota(segundaNota);
                     while (aluno.getSegundaNota() > 35){
                         System.out.println("Nota inválida! Digite a Segunda nota do aluno");
-                        segundaNota = scan.nextDouble();
+                        aluno.setSegundaNota(scan.nextDouble());
                     }
 
 
@@ -138,8 +138,7 @@ public class Program {
                     while (aluno.getPrimeiraNota() > 35)
                     {
                         System.out.println("Nota inválida! Digite a terceira nota do aluno");
-                        terceiraNota = scan.nextDouble();
-                    }
+                        aluno.setTerceiraNota(scan.nextDouble());                    }
 
                     aluno.calcularMediaAluno(primeiraNota,segundaNota,terceiraNota);
 

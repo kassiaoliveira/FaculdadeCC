@@ -116,7 +116,7 @@ namespace atividadeCsharp
                         while (aluno.GetPrimeiraNota() > 30)
                         {
                             Console.WriteLine("Nota inválida! Digite a primeira nota do aluno");
-                            primeiraNota = Convert.ToDouble(Console.ReadLine());
+                            aluno.SetPrimeiraNota(Convert.ToDouble(Console.ReadLine()));
                         }
 
 
@@ -125,7 +125,7 @@ namespace atividadeCsharp
                         aluno.SetSegundaNota(segundaNota);
                         while (aluno.GetSegundaNota() > 35){
                         Console.WriteLine("Nota inválida! Digite a Segunda nota do aluno");
-                        segundaNota = Convert.ToDouble(Console.ReadLine());
+                            aluno.SetSegundaNota(Convert.ToDouble(Console.ReadLine()));
                         }
                         
 
@@ -135,7 +135,7 @@ namespace atividadeCsharp
                         while (aluno.GetPrimeiraNota() > 35)
                         {
                             Console.WriteLine("Nota inválida! Digite a terceira nota do aluno");
-                            terceiraNota = Convert.ToDouble(Console.ReadLine());
+                            aluno.SetTerceiraNota(Convert.ToDouble(Console.ReadLine()));
                         }
 
 
