@@ -113,14 +113,31 @@ namespace atividadeCsharp
                         Console.WriteLine("Digite a Primeira nota do aluno");
                         double primeiraNota = Convert.ToDouble(Console.ReadLine());
                         aluno.SetPrimeiraNota(primeiraNota);
+                        while (aluno.GetPrimeiraNota() > 30)
+                        {
+                            Console.WriteLine("Nota inválida! Digite a primeira nota do aluno");
+                            primeiraNota = Convert.ToDouble(Console.ReadLine());
+                        }
+
 
                         Console.WriteLine("Digite a Segunda nota do aluno");
                         double segundaNota = Convert.ToDouble(Console.ReadLine());
                         aluno.SetSegundaNota(segundaNota);
+                        while (aluno.GetSegundaNota() > 35){
+                        Console.WriteLine("Nota inválida! Digite a Segunda nota do aluno");
+                        segundaNota = Convert.ToDouble(Console.ReadLine());
+                        }
+                        
 
                         Console.WriteLine("Digite a Terceira nota do aluno");
                         double terceiraNota = Convert.ToDouble(Console.ReadLine());
                         aluno.SetTerceiraNota(terceiraNota);
+                        while (aluno.GetPrimeiraNota() > 35)
+                        {
+                            Console.WriteLine("Nota inválida! Digite a terceira nota do aluno");
+                            terceiraNota = Convert.ToDouble(Console.ReadLine());
+                        }
+
 
                         aluno.CalcularMediaAluno(primeiraNota, segundaNota, terceiraNota);
                        

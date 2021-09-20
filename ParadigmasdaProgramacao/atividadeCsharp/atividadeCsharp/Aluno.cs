@@ -23,7 +23,7 @@ namespace atividadeCsharp
 
         public void CalcularMediaAluno(double primeiraNota, double segundaNota, double terceiraNota)
         {
-            notaFinal = this.primeiraNota + (this.segundaNota + this.terceiraNota);
+            notaFinal = this.primeiraNota + this.segundaNota + this.terceiraNota;
 
             if (notaFinal >= 60)
             {

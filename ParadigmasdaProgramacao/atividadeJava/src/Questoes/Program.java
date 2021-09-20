@@ -113,17 +113,33 @@ public class Program {
                     aluno.setNomeAluno(nomeAluno);
                     scan.nextLine();
 
+
                     System.out.println("Digite a Primeira nota do aluno");
-                    Double primeiraNota=scan.nextDouble();
+                    double primeiraNota = scan.nextDouble();
                     aluno.setPrimeiraNota(primeiraNota);
+                    while (aluno.getPrimeiraNota() > 30)
+                    {
+                        System.out.println("Nota inválida! Digite a primeira nota do aluno");
+                        primeiraNota = scan.nextDouble();
+                    }
 
                     System.out.println("Digite a Segunda nota do aluno");
-                    Double segundaNota=scan.nextDouble();
+                    double segundaNota = scan.nextDouble();
                     aluno.setSegundaNota(segundaNota);
+                    while (aluno.getSegundaNota() > 35){
+                        System.out.println("Nota inválida! Digite a Segunda nota do aluno");
+                        segundaNota = scan.nextDouble();
+                    }
+
 
                     System.out.println("Digite a Terceira nota do aluno");
-                    Double terceiraNota=scan.nextDouble();
+                    double terceiraNota = scan.nextDouble();
                     aluno.setTerceiraNota(terceiraNota);
+                    while (aluno.getPrimeiraNota() > 35)
+                    {
+                        System.out.println("Nota inválida! Digite a terceira nota do aluno");
+                        terceiraNota = scan.nextDouble();
+                    }
 
                     aluno.calcularMediaAluno(primeiraNota,segundaNota,terceiraNota);
 
