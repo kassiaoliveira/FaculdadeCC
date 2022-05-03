@@ -5,24 +5,25 @@ AS
 DECLARE @DataInicial DATE, @HoraInicial TIME(0), @HoraFinal TIME(0)
 SET @DataInicial= @Data
     BEGIN
-        IF NOT EXISTS(SELECT Dt_Feriado
-            FROM Feriado
-            WHERE Dt_Feriado = @Data)  AND
-            NOT EXISTS (SELECT *
-            FROM AgendaMedico
-            WHERE @CRM = CRM and @Data=Data) AND
-            (SELECT Situacao
-            FROM DisponibilidadeMedico
-            WHERE CRM = @CRM AND DiaSemana = DATEPART(DW,@Data))=1
-                                 BEGIN
+        
+        IF NOT EXISTS
+            (SELECT Dt_Feriado FROM Feriado WHERE Dt_Feriado = @Data)  -- 3.1. Se a data não é feriado;
+            AND
+            NOT EXISTS (SELECT * FROM AgendaMedico WHERE @CRM = CRM and @Data=Data) -- 3.2. Se já não foi feita a geração da agenda para esta data e este médico;
+            AND
+            (SELECT Situacao FROM DisponibilidadeMedico WHERE CRM = @CRM AND DiaSemana = DATEPART(DW,@Data)) = 1 --3.3. Se o médico atende neste dia da semana;
+                            
+            BEGIN
             SET @HoraInicial=(SELECT HoraInicial
             FROM DisponibilidadeMedico
             WHERE CRM=@CRM AND DATEPART(DW,@Data)=DiaSemana)
             SET @HoraFinal  = (SELECT HoraFinal
             FROM DisponibilidadeMedico
             WHERE CRM=@CRM AND DATEPART(DW,@Data)=DiaSemana)
+            
+            --3.4. Gerar os registros com diferença de 10 minutos entre a HoraInicial e HoraFinal conforme determinados na tabela de Disponibilidade_Medico.
             WHILE @HoraInicial < @HoraFinal
-                                           BEGIN
+                BEGIN
                 INSERT INTO AgendaMedico
                     (CRM,Data,Hora,Situacao,Encaixe)
                 VALUES
@@ -33,4 +34,4 @@ SET @DataInicial= @Data
         SET @Data=DATEADD(DAY, 1, @Data);
     END
     PRINT 'Fim da Geração'
-    GO
+GO
